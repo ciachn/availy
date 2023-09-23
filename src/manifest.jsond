@@ -1,0 +1,7 @@
+{
+	"short_name": "Availy",
+	"name": "Availy",
+	"orientation": "portrait-primary",
+	"background_color": "#171720",
+	"start_url": "index.html"
+}

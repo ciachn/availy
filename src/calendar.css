@@ -1,0 +1,57 @@
+.calendar {
+    display: block;
+    box-shadow: 0 0 0.8rem rgba(0,0,0,0.5);
+}
+
+.calendar table {
+    border-collapse: collapse; border-radius: 0.3rem; overflow: hidden; width: 100%;
+    background: #334;
+}
+
+.calendar table th {
+    padding: 0.3rem 0.2rem; text-align: center;
+    background: #0cc; color: #023;
+}
+
+.calendar table tr.tr-2 th {
+    font-size: 0.9rem;
+    background: #8cc; color: #000;
+}
+
+.calendar table .th-2 div {
+    display: flex; gap: 0.2rem; padding-right: 0.2rem;
+}
+
+.calendar table .th-2 div > i {
+    flex: 1 1 auto; border-radius: 0.3rem; padding: 0.6rem 0; text-align: center;
+    background: rgba(0,0,0,0.1);
+}
+
+.calendar table .th-1 {
+    font-size: 1rem; text-transform: uppercase;
+}
+
+.calendar table .th-2 div > i:hover {
+    background: rgba(0,0,0,0.3); cursor: default;
+}
+
+.calendar table tbody td {
+    padding: 0.8rem 0.8rem; text-align: center; border-radius: 0.5rem;
+    color: #fff;
+}
+
+.calendar table tbody td:hover {
+    background: #099;
+}
+
+.calendar table tbody td.is-gray {
+    color: #667;
+}
+
+.calendar table tbody td.is-today {
+    outline: 2px dotted rgba(0,255,0,0.5);
+}
+
+.calendar table tbody td.is-selected {
+    background: #0cc; color: #000;
+}

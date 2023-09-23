@@ -1,0 +1,17 @@
+html {
+	font-family: Inter;
+}
+
+body {
+    background: #171720; color: #ddd;
+}
+
+.app {
+    margin-top: env(safe-area-inset-top);
+}
+
+.btn {
+    display: block; width: 100%; font: inherit; border: none; font-size: 0.9rem; padding: 0.8rem 0; font-weight: 700; border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem #000;
+    background: #0cd; color: #023;
+}

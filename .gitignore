@@ -1,0 +1,4 @@
+.parcel-cache/
+api/vendor/
+dist/
+node_modules/
