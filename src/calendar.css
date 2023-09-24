@@ -10,7 +10,7 @@
 
 .calendar table th {
     padding: 0.3rem 0.2rem; text-align: center;
-    background: #0cc; color: #023;
+    background: #0cd; color: #023;
 }
 
 .calendar table tr.tr-2 th {
@@ -28,7 +28,7 @@
 }
 
 .calendar table .th-1 {
-    font-size: 1rem; text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .calendar table .th-2 div > i:hover {
@@ -40,10 +40,6 @@
     color: #fff;
 }
 
-.calendar table tbody td:hover {
-    background: #099;
-}
-
 .calendar table tbody td.is-gray {
     color: #667;
 }
@@ -53,5 +49,9 @@
 }
 
 .calendar table tbody td.is-selected {
-    background: #0cc; color: #000;
+    background: #0ee; color: #000; font-weight: 500;
+}
+
+.calendar table tbody td:hover {
+    outline: 2px dotted #0ff;
 }

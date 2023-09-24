@@ -1,0 +1,7 @@
+
+(sentinel::auth-required)
+(import "lib/directives")
+
+(&
+    data (d-get-object (session.user.user_id) "availability")
+)

@@ -2,24 +2,20 @@
 import "./css/xui.css"
 import "./css/main.css"
 
-import { signal } from 'riza';
-import Calendar from './calendar';
+import Login from './login';
+import CreateAccount from './create-account';
+import Home from './home';
 
-let selectedDates = signal([]);
-let content = signal('');
+import { checkAuth } from './actions';
 
 export default () =>
-    <div class="app p-fill p-4 py-5">
-        <Calendar firstWeekDay={1} id="calendar" />
+    <r-panel class="app f-row" onRootReady={ () => checkAuth() } >
+        <div class="f-col s-10 s-4-md s-3-lg s-2h-xl mx-auto">
 
-        <br/><br/>
+            <Login />
+            <CreateAccount />
+            <Home />
 
-        <button class="btn" onClick={ () => {
-            content.set( document.getElementById('calendar').selectedDates.map(date => <div>{date.toISOString().substring(0, 10)}</div> ) );
-        }}>
-            <i class="fa fa-save me-1"></i>
-            Save Availability
-        </button>
-
-    </div>
+        </div>
+    </r-panel>
 ;

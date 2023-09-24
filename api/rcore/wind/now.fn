@@ -1,4 +1,5 @@
 
 (&
-	message "Current date and time is: (datetime::now)"
+    serverTime (datetime::now)
+    databaseTime (db::scalar `SELECT NOW()`)
 )

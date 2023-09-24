@@ -127,6 +127,17 @@ function setToday ($activeDate) {
 };
 
 /**
+ * Clears all selected dates.
+ * @param {signal<Date[]>} selectedDates
+ */
+function clearSelected (selectedDates) {
+    if (!confirm('Are you sure you want to clear all selected dates?'))
+        return;
+    selectedDates.set([]);
+}
+
+
+/**
  * Constructs a calendar component.
  * @param {Object} options
  * @param {signal<Date>} [options.focusDate] - Calendar focus date.
@@ -159,7 +170,7 @@ export default function ({ focusDate=null, firstWeekDay=0, selectedDates=null, l
                             <i class="fa fa-arrow-left" title={ labels[lang]['prev'] } onClick={ () => prevMonth(focusDate) }></i>
                             <i class="fa fa-arrow-right" title={ labels[lang]['next'] } onClick={ () => nextMonth(focusDate) }></i>
                             <i class="fa fa-star" title={ labels[lang]['today'] } onClick={ () => setToday(focusDate) }></i>
-                            <i class="fa fa-trash-can" title={ labels[lang]['clear'] } onClick={ () => selectedDates.set([]) }></i>
+                            <i class="fa fa-trash-can" title={ labels[lang]['clear'] } onClick={ () => clearSelected(selectedDates) }></i>
                         </div>
                     </th>
                 </tr>

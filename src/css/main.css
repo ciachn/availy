@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: #171720; color: #ddd;
+    background: #171720; color: #d7d7e0;
 }
 
 .app {
@@ -14,4 +14,41 @@ body {
     display: block; width: 100%; font: inherit; border: none; font-size: 0.9rem; padding: 0.8rem 0; font-weight: 700; border-radius: 0.3rem;
     box-shadow: 0 0.5rem 0.5rem -0.5rem #000;
     background: #0cd; color: #023;
+}
+
+.btn.alt-1 {
+    background: #372747; color: #eef; font-weight: 500;
+}
+
+/* ** */
+r-panel:not(.is-active) {
+    display: none;
+}
+
+/* ** */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group > label {
+    display: block; margin-bottom: 0.2rem; font-size: 0.9rem;
+}
+
+.input-group > input {
+    width: 100%; box-sizing: border-box; font: inherit; outline: none;
+    padding: 0.6rem 0.8rem; font-size: 1rem; border-radius: 0.3rem;
+    background: #272737; border: none; color: #d7d7e0;
+}
+
+span.field-error {
+    display: block; color: #fc7; font-size: 0.8rem; margin-top: 0.2rem;
+}
+
+input.field-error {
+    outline: 1px solid #fc7;
+}
+
+.message.error {
+    border-radius: 0.3rem; padding: 0.8rem 0.8rem; font-size: 0.9rem;
+    color: #fc7; border: 1px solid #fc7;
 }

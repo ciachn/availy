@@ -1,0 +1,39 @@
+
+(shield::validate form
+
+    (shield::field created
+        set (datetime::now)
+    )
+
+    (shield::field name
+        required true
+        pattern text
+    )
+
+    (shield::field phone
+        required true
+        pattern phone
+    )
+
+    (shield::field username
+        required true
+        pattern identifier
+        check:unique (isnull (db::scalar `SELECT user_id FROM ##users WHERE is_active=1 AND username=?` (# ($)) ))
+    )
+
+    (shield::field password
+        required true
+        set (sentinel::password ($))
+    )
+
+    (shield::field rpassword
+        required true
+        requires password|ignore
+        set (sentinel::password ($))
+        check:mismatch (eq ($out.password) ($out.rpassword))
+        ignore true
+    )
+)
+
+(db::insert "##users" (form))
+(&)
