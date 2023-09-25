@@ -52,3 +52,13 @@ input.field-error {
     border-radius: 0.3rem; padding: 0.8rem 0.8rem; font-size: 0.9rem;
     color: #fc7; border: 1px solid #fc7;
 }
+
+/* *** */
+td em {
+    position: absolute; left: 0.2rem; bottom: 0.2rem; width: calc(100% - 0.4rem); background: #000; height: 0.3rem; border-radius: 0.2rem;
+}
+
+td em em {
+    position: absolute; left: 0; top: 0; display: block; height: 0.3rem;
+    background: #a3a;
+}

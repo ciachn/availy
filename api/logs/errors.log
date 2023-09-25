@@ -1,0 +1,172 @@
+[2023-09-24 09:18] 1695V559X0302: Exception in Expr.php:3277
+  *** , ***
+  Wind: rcore/wind/account/availability/load-all.fn
+  Rose\{closure} (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:226
+  Rose\ExprFn :: exec3 (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:1240
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Wind.php:191
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+
+[2023-09-24 09:18] 1695H559C0320: Exception in Expr.php:3277
+  *** , ***
+  Wind: rcore/wind/account/availability/load-all.fn
+  Rose\{closure} (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:226
+  Rose\ExprFn :: exec3 (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:1240
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Wind.php:191
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+
+[2023-09-24 09:18] 1695N559P0326: Exception in Expr.php:3277
+  *** 1 ***
+  Wind: rcore/wind/account/availability/load-all.fn
+  Rose\{closure} (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:226
+  Rose\ExprFn :: exec3 (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:1240
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Wind.php:191
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+
+[2023-09-25 01:29] 1695Y560A5364: Rose\Errors\Error in Connection.php:291
+  *** You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 5 ***
+  Wind: rcore/wind/account/availability/load-summary.fn
+  Rose\Data\Connection :: execQuery (string, null) Database.php:113
+  Rose\Extensions :: Rose\Ext\{closure} (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:226
+  Rose\ExprFn :: exec3 (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:1240
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Expr.php:1439
+  Rose\Expr :: value (Rose\Arry, Rose\Map) Expr.php:1845
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Wind.php:191
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+
+[2023-09-25 01:30] 1695R560H5400: Rose\Errors\Error in Connection.php:291
+  ***  ***
+  Wind: rcore/wind/account/availability/load-summary.fn
+  Rose\Data\Connection :: execQuery (string, string) Database.php:113
+  Rose\Extensions :: Rose\Ext\{closure} (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:226
+  Rose\ExprFn :: exec3 (Rose\Arry, Rose\Arry, Rose\Map) Expr.php:1240
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Expr.php:1439
+  Rose\Expr :: value (Rose\Arry, Rose\Map) Expr.php:1845
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1601
+  Rose\Expr :: blockValue (Rose\Arry, Rose\Map) Expr.php:2275
+  Rose\{closure} (Rose\Arry, Rose\Map) Expr.php:231
+  Rose\ExprFn :: exec2 (Rose\Arry, Rose\Map) Expr.php:1235
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1276
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string, string) Expr.php:1291
+  Rose\Expr :: Rose\{closure} (Rose\Map, int, Rose\Arry) Arry.php:544
+  Rose\Arry :: forEach (function) Expr.php:1339
+  Rose\Expr :: expand (Rose\Arry, Rose\Map, string) Wind.php:191
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+
+[2023-09-25 01:32] 1695M560E5537: Rose\Errors\Error in Expr.php:516
+  *** Parse error: Unexpected end of template ***
+  Rose\Expr :: parseTemplate (string, string, string, bool, bool) Expr.php:934
+  Rose\Expr :: parse (string) Wind.php:177
+  Rose\Ext\Wind :: process (string) Wind.php:336
+  Rose\Ext\Wind :: main () Wind.php:39
+  Rose\Ext\WindProxy :: main () Gateway.php:246
+  Rose\Gateway :: main () Main.php:525
+  Rose\Main :: initialize (string, null) index.php:5
+

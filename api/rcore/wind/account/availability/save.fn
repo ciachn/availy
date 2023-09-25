@@ -16,5 +16,5 @@
     )
 )
 
-(d-set-object (session.user.user_id) "availability" (date-list))
+(d-set-object (session.user.user_id) "availability" (array::unique (date-list)))
 (&)

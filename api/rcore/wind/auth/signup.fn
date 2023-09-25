@@ -36,4 +36,5 @@
 )
 
 (db::insert "##users" (form))
+(db::insert "##user_privileges" (& user_id (db::lastInsertId) privilege_id 2))
 (&)

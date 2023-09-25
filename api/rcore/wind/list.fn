@@ -1,0 +1,4 @@
+
+(db::table `
+    SELECT * FROM ##directives
+`)

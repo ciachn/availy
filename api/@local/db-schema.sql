@@ -35,6 +35,9 @@ CREATE TABLE ##privileges
 )
 ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+INSERT INTO ##privileges (privilege_id, name) VALUES (1, 'family');
+INSERT INTO ##privileges (privilege_id, name) VALUES (2, 'work');
+
 
 CREATE TABLE ##user_privileges
 (
