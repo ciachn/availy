@@ -251,11 +251,10 @@ export default function ({ focusDate=null, firstWeekDay=0, selectedDates=null, a
                                         class:is-selected={ containsDate(selectedDates, day.date) }
                                         class:is-today={ equalDates(day.date, today) }
                                         onPointerDown={ (evt) => [evt.stopPropagation(), pointerDown(selectedDates, annotatedDates, day.date, day.str)] }
-                                        title={ !(day.str in annotatedDates.get()) ? '' : annotationText(annotatedDates.get()[day.str]) }
                                     >
                                         { day.date.getDate() }
                                         {
-                                            !(day.str in annotatedDates.get()) ? '' : 
+                                            !(day.str in annotatedDates.get()) || !annotatedDates.get()[day.str].count ? '' : 
                                                 <em><em style:width={100*(annotatedDates.get()[day.str].count / annotatedDates.get()[day.str].total)+'%'}></em></em>
                                         }
                                     </td>
@@ -269,9 +268,9 @@ export default function ({ focusDate=null, firstWeekDay=0, selectedDates=null, a
 
         {
             $activeAnnotationText.length == '' 
-                ? <div style="font-size: 0.8rem; padding: 0.8rem; background: #1c1c25; margin: 0.5rem 0; border-radius: 0.3rem;">Tap a date to view people available. Double tap to toggle.</div>
+                ? <div style="font-size: 0.8rem; padding: 0.8rem; background: #1c1c25; margin: 0.5rem 0; border-radius: 0.3rem;">Tap on a date to view people available. Double tap to toggle your availability.</div>
                 : <div class="mt-2">
-                    <span class="person-title">{ monthName[lang][~~pointerDownDate.substring(5, 7)] + ' ' + pointerDownDate.substring(8, 10) }</span>
+                    <span class="person-title">{ monthName[lang][-1 + ~~pointerDownDate.substring(5, 7)] + ' ' + pointerDownDate.substring(8, 10) }</span>
                     {$activeAnnotationText.split('\n').map(v => <span class="person">{v}</span>)}
                   </div>
         }

@@ -10,7 +10,7 @@ import { checkAuth } from './actions';
 
 export default () =>
     <r-panel class="app f-row" onRootReady={ () => checkAuth() } >
-        <div class="f-col s-10 s-4-md s-3-lg s-2h-xl mx-auto">
+        <div class="f-col s-11 s-4-md s-3-lg s-2h-xl mx-auto">
 
             <Login />
             <CreateAccount />

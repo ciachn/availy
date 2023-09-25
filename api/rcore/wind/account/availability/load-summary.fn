@@ -3,18 +3,20 @@
 (import "lib/directives")
 
 (set groups (db::table `
-    SELECT p.name, GROUP_CONCAT(u.user_id) user_id
+    SELECT p.name, p.privilege_id
     FROM ##users u
     INNER JOIN ##user_privileges up ON up.user_id = u.user_id
     INNER JOIN ##privileges p ON p.privilege_id = up.privilege_id
+    WHERE u.user_id = {session.user.user_id}
     GROUP BY p.privilege_id
 `))
 
 (for i (groups)
     (set i.dates (&))
     (set i.users (mapify j (db::table `
-        SELECT user_id, username, name
-        FROM ##users WHERE user_id IN ({i.user_id})
+        SELECT u.user_id, u.username, u.name
+        FROM ##users u
+        INNER JOIN ##user_privileges up ON up.user_id = u.user_id AND up.privilege_id = {i.privilege_id}
     `)
         (j.user_id)
         (&
@@ -23,7 +25,7 @@
         )
     ))
 
-    (for user_id (split "," (i.user_id))
+    (for user_id (keys (i.users))
         (for k (d-get-object (user_id) "availability")
             (when-not (has (k) (i.dates))
                 (set i.dates.(k) (& "count" 0 "list" (#)))
@@ -36,14 +38,11 @@
 )
 
 (&
-    groups (mapify (groups) (i.name) 
-        (with users (split "," (i.user_id))
-            (&
-                "count" (users.length)
-                "list" (users)
-                "users" (i.users)
-                "dates" (map j (i.dates) (& "count" (j.count) "list" (j.list)))
-            )
+    groups (mapify (groups) (i.name)
+        (&
+            "count" (i.users.length)
+            "users" (i.users)
+            "dates" (map j (i.dates) (& "count" (j.count) "list" (j.list)))
         )
     )
 )
