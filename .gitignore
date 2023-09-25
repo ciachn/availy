@@ -3,3 +3,4 @@ api/vendor/
 dist/
 node_modules/
 prod.conf
+*.log
