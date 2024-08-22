@@ -1,5 +1,6 @@
 .parcel-cache/
 api/vendor/
+api/volatile/
 dist/
 node_modules/
 prod.conf
